@@ -14,3 +14,4 @@ Delete Icon: In Favorite Dashboard has the Option to delete the item from the fa
 - Extensions - added extenions which needed for this project.
 - Constants - Written all constants one place for feature controlled by the developer
 - Storyboard - Developed UI by using storyboard concepts
+- Added unit test cases by using the apple XCTest framework as well.
