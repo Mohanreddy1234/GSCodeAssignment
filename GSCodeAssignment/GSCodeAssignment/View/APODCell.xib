@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="APODCell" rowHeight="475" id="KGk-i7-Jjw" customClass="APODCell" customModule="GSAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="475"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="448" height="475"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: 12-10-2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oqp-ux-3vZ">
+                        <rect key="frame" x="20" y="20" width="374" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="MCu-QK-mEV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Explanation" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7io-26-DM7">
+                        <rect key="frame" x="20" y="55" width="408" height="125.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="acR-fY-aJo">
+                        <rect key="frame" x="20" y="185.5" width="408" height="19.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LS0-KQ-89n">
+                        <rect key="frame" x="20" y="215" width="408" height="250"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="Dj7-7G-np7"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVb-eX-HXW">
+                        <rect key="frame" x="404" y="20" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="d0y-QB-XuD"/>
+                            <constraint firstAttribute="width" constant="44" id="mWB-gn-Yb3"/>
+                        </constraints>
+                        <state key="normal" title="Button" image="fav"/>
+                        <connections>
+                            <action selector="favoriteButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="me0-HD-K8U"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-If-mzk">
+                        <rect key="frame" x="20" y="215" width="408" height="250"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hgA-Mt-8FJ">
+                                <rect key="frame" x="0.0" y="0.0" width="408" height="250"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRo-j0-1NK">
+                                <rect key="frame" x="179" y="100" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4bG-4r-56T"/>
+                                    <constraint firstAttribute="width" constant="50" id="gOp-eQ-hyl"/>
+                                </constraints>
+                                <state key="normal" image="play_vdo"/>
+                                <connections>
+                                    <action selector="videoPlayButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Rqn-gz-une"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hgA-Mt-8FJ" secondAttribute="trailing" id="1V2-Rk-ou8"/>
+                            <constraint firstItem="CRo-j0-1NK" firstAttribute="centerY" secondItem="Zga-If-mzk" secondAttribute="centerY" id="4Be-g9-1ta"/>
+                            <constraint firstItem="hgA-Mt-8FJ" firstAttribute="top" secondItem="Zga-If-mzk" secondAttribute="top" id="TgF-XS-0zZ"/>
+                            <constraint firstItem="hgA-Mt-8FJ" firstAttribute="leading" secondItem="Zga-If-mzk" secondAttribute="leading" id="kCn-Wx-w2H"/>
+                            <constraint firstItem="CRo-j0-1NK" firstAttribute="centerX" secondItem="Zga-If-mzk" secondAttribute="centerX" id="lSG-9x-Hot"/>
+                            <constraint firstAttribute="bottom" secondItem="hgA-Mt-8FJ" secondAttribute="bottom" id="uyc-GU-yIJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="LS0-KQ-89n" firstAttribute="top" secondItem="acR-fY-aJo" secondAttribute="bottom" constant="10" id="58y-gI-Vez"/>
+                    <constraint firstItem="eVb-eX-HXW" firstAttribute="leading" secondItem="Oqp-ux-3vZ" secondAttribute="trailing" constant="10" id="88g-Uq-D5u"/>
+                    <constraint firstAttribute="bottom" secondItem="Zga-If-mzk" secondAttribute="bottom" constant="10" id="M8D-4Z-qv9"/>
+                    <constraint firstAttribute="trailing" secondItem="7io-26-DM7" secondAttribute="trailing" constant="20" id="NeR-YL-gAi"/>
+                    <constraint firstAttribute="trailing" secondItem="LS0-KQ-89n" secondAttribute="trailing" constant="20" id="Onb-SZ-md3"/>
+                    <constraint firstItem="Oqp-ux-3vZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Phu-ac-ehm"/>
+                    <constraint firstItem="eVb-eX-HXW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Pwx-AT-6no"/>
+                    <constraint firstItem="7io-26-DM7" firstAttribute="top" secondItem="Oqp-ux-3vZ" secondAttribute="bottom" constant="5" id="ZVu-ON-V2K"/>
+                    <constraint firstAttribute="trailing" secondItem="Zga-If-mzk" secondAttribute="trailing" constant="20" id="Zo4-Xo-v4b"/>
+                    <constraint firstAttribute="trailing" secondItem="acR-fY-aJo" secondAttribute="trailing" constant="20" id="b3d-wZ-fgl"/>
+                    <constraint firstItem="Oqp-ux-3vZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="gcz-4Q-SXP"/>
+                    <constraint firstItem="acR-fY-aJo" firstAttribute="top" secondItem="7io-26-DM7" secondAttribute="bottom" constant="5" id="hhg-a5-LNx"/>
+                    <constraint firstAttribute="trailing" secondItem="eVb-eX-HXW" secondAttribute="trailing" id="j6L-Yd-kFh"/>
+                    <constraint firstAttribute="bottom" secondItem="LS0-KQ-89n" secondAttribute="bottom" constant="10" id="mnh-KK-6E9"/>
+                    <constraint firstItem="7io-26-DM7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uOf-R3-rLk"/>
+                    <constraint firstItem="Zga-If-mzk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uXy-68-SOV"/>
+                    <constraint firstItem="LS0-KQ-89n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wMI-8h-hLc"/>
+                    <constraint firstItem="acR-fY-aJo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wbh-zw-khm"/>
+                    <constraint firstItem="Zga-If-mzk" firstAttribute="top" secondItem="acR-fY-aJo" secondAttribute="bottom" constant="10" id="zJm-ob-ppg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="apodImageView" destination="LS0-KQ-89n" id="u5p-Tp-tIr"/>
+                <outlet property="date" destination="Oqp-ux-3vZ" id="Jd5-ic-7aV"/>
+                <outlet property="explanation" destination="7io-26-DM7" id="qce-wH-iJi"/>
+                <outlet property="favButton" destination="eVb-eX-HXW" id="lUg-7E-aCH"/>
+                <outlet property="title" destination="acR-fY-aJo" id="a2u-bn-BvU"/>
+                <outlet property="videoButton" destination="CRo-j0-1NK" id="dTC-AS-GYO"/>
+                <outlet property="videoImage" destination="hgA-Mt-8FJ" id="yfy-2O-dfN"/>
+                <outlet property="videoView" destination="Zga-If-mzk" id="Ogb-WH-YyK"/>
+            </connections>
+            <point key="canvasLocation" x="456.52173913043481" y="226.67410714285714"/>
+        </tableViewCell>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+    </objects>
+    <resources>
+        <image name="fav" width="24" height="24"/>
+        <image name="play_vdo" width="44" height="44"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
